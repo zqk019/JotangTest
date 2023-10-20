@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>        
+        .bg {
+            margin: 200px 100px;
+            background-color: #fff5;
+            width: 650px;
+            height: 500px;
+            position: relative;
+            border-radius: 30px;
+        }
+        table.article {
+            border: 0;
+            border-spacing: 0;
+            width: 650px;
+        }
+        th.header {
+            font-size: 50px;
+            text-align: center;
+        }
+        td.header{
+            font-size: 50px;
+        }
+        td.name {
+            font-size: 30px;
+            width: 200px;
+        }
+        td.name:hover {
+            cursor: pointer;
+        }
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="leading">
+        <li class="leading"><a href="index.html">Home</a></li>
+        <li class="leading"><a href="about.html">About</a></li>
+        <li class="leading"><a href="img.html">Img</a></li>
+        <li class="active leading"><a href="text.html">Text</a></li>
+    </ul>
+    <div class="bg">
+        <table class="article">
+            <!-- 头部 -->
+            <thead>
+                <tr>
+                    <th class="header" colspan="2"> 
+                    Articles
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="header">Name</td>
+                    <td class="header">Content</td>
+                </tr>
+                <tr>
+                    <td class="name">Html4笔记</td>
+                    <td class="content">尚硅谷出版实用笔记</td>
+                </tr>
+                <tr>
+                    <td class="name">CSS2笔记</td>
+                    <td class="content">尚硅谷出版实用笔记</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -2,104 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>照片墙</title>
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #container {
-            width: 960px;
-            height: 450px;
-            margin: 60px auto;
-            position: relative;
-        }
-
-        .pic {
-            width: 250px;
-        }
-
-        #container img:hover {
-            box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
-            transform: rotate(0deg) scale(1.20);
-            -webkit-transform: rotate(0deg) scale(1.20);
-            z-index: 2;
-        }
-
-        #container img {
-            padding: 10px 10px 15px;
-            background: white;
-            border: 1px solid #dddddd;
-            box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
-            -webkit-transition: all 0.5s ease-in;
-            -moz-transition: all 0.5s ease-in;
-            -ms-transition: all 0.5s ease-in;
-            -o-transition: all 0.5s ease-in;
-            transition: all 0.5s ease-in;
-            position: absolute;
-            z-index: 1;
-        }
-
-        .pic1 {
-            left: 200px;
-            top: 400px;
-            transform: rotate(-5deg);
-            -webkit-transform: rotate(-5deg);
-            -moz-transform: rotate(-5deg);
-            -o-transform: rotate(-5deg);
-        }
-
-        .pic2 {
-            left: 200px;
-            top: 40px;
-            transform: rotate(-20deg);
-            -webkit-transform: rotate(-20deg);
-        }
-
-        .pic3 {
-            left: -50px;
-            top: 300px;
-            transform: rotate(5deg);
-            -webkit-transform: rotate(5deg);
-        }
-
-        .pic4 {
-            top: 0;
-            left: 500px;
-            transform: rotate(-5deg);
-            -webkit-transform: rotate(-5deg);
-        }
-
-        .pic5 {
-            right: 50px;
-            top: 400px;
-            transform: rotate(5deg);
-            -webkit-transform: rotate(5deg);
-        }
-
-        .pic6 {
-            right: -200px;
-            top: 200px;
-            transform: rotate(10deg);
-            -webkit-transform: rotate(10deg);
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/img.css">
+    <style>
+    .box  {
+        display: block;
+        position: relative;
+    }
+    .box img {
+        border: 1px solid white;
+        padding: 10px;
+        width: 300px;
+        box-shadow: 1px 1px 5px #666;
+        border-radius: 10px;
+        transition: all 1s;
+    }
+    .box img:hover {
+        transform: scale(1.5,1.5);
+        z-index: 1;
+    }
+    .img1 {
+        position: absolute;
+        top: 481px;
+        left: 300px;
+        transform: rotate(45deg);
+    }
+    .img2 {
+        position: absolute;
+        top: 148px;
+        left: 442px;
+        transform: rotate(-25deg);
+    }
+    .img3 {
+        position: absolute;
+        top: 197px;
+        right: 100px;
+        transform: rotate(15deg);
+    }
+    .img4 {
+        position: absolute;
+        top: 450px;
+        right: 631px;
+        transform: rotate(-65deg);
+    }
+    .img5 {
+        position: absolute;
+        top: 133px;
+        right: 493px;
+        transform: rotate(40deg);
+    }
+    .img6 {
+        position: absolute;
+        top: 393px;
+        right: 318px;
+        transform: rotate(-30deg);
+    }
     </style>
-    <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a calss="active" href="img.html">Img</a></li>
-        <li><a href="TextShare.html">TextShare</a></li>
+        <ul class="leading">
+        <li class="leading"><a href="index.html">Home</a></li>
+        <li class="leading"><a href="about.html">About</a></li>
+        <li class="active leading"><a href="img.html">Img</a></li>
+        <li class="leading"><a href="text.html">Text</a></li>
     </ul>
-    <div id="container">
-        <img class="pic pic1" src="img/1.jpg">
-        <img class="pic pic2" src="img/2.jpg">
-        <img class="pic pic3" src="img/3.jpg">
-        <img class="pic pic4" src="img/4.jpg">
-        <img class="pic pic5" src="img/5.jpg">
-        <img class="pic pic6" src="img/6.jpg">
-    </div>
+    <div class="box">
+        <img class="img1" src="img/1.jpg" >
+        <img class="img2" src="img/2.jpg" >
+        <img class="img3" src="img/3.jpg" >
+        <img class="img4" src="img/4.jpg" >
+        <img class="img5" src="img/5.jpg" >
+        <img class="img6" src="img/6.jpg" >
 </body>
 </html>
+
+
+
+
+
