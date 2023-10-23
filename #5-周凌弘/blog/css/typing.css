@@ -1,0 +1,24 @@
+.typing {
+    display: inline-block;
+/*     宽度设置的大些就行 */
+/*     width: 400px; */
+/*     ch表示一个字体的宽度 */
+    width: 20.5ch;
+    font: bold 200% Consolas, Monaco, monospace;   /*等宽字体*/
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 700;
+    border-right: 5px solid transparent;
+/*     step,帧动画相较于渐变的动画更合适此时 */
+/*     animation: typing 3s; */
+    animation: typing 2s steps(11), caret .5s steps(1) infinite;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+}
+@keyframes caret{
+    50% { border-right-color: black}
+}

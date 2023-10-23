@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/标签页图标.jpg">
+    <style>        
+        .bg {
+            position: relative;
+            margin-top: 200px;
+            margin-left:  100px;
+            background-color: #252d38;
+            width: 650px;
+            position: relative;
+            border-radius: 30px;
+            box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            color: aliceblue;
+            overflow: hidden;
+        }
+        .header {
+            text-align: center;
+            font-size: 30px;
+        }
+        .content a {
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 50px;
+        }
+        .content a div:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <ul class="leading">
+        <li class="leading"><a href="index.html">Home</a></li>
+        <li class="leading"><a href="about.html">About</a></li>
+        <li class="leading"><a href="img.html">Img</a></li>
+        <li class="active leading"><a href="text.html">Text</a></li>
+    </ul>
+    <div class="bg">
+        <div class="header">
+            <h1>Articles</h1>
+        </div>
+        <div class="content">
+            <a href="text/HTML4笔记.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="article1">
+                    <span>html笔记</span>
+                </div>
+            </a>
+            <a href="text/CSS2笔记.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="article2">
+                    <span>css笔记</span>
+                </div>
+            </a>    
+        </div>
+    </div>
+</body>
+</html>
